@@ -1,0 +1,515 @@
+/* 全体のフォントをM PLUS Rounded 1cに設定 */
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* 見出しを太く、強調 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+}
+
+/* テキストやリンクなどの通常フォント */
+p,
+a,
+li {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 400;
+}
+
+
+
+
+/* ハンバーガーメニューとその下の色 */
+.bg-blue {
+  background-color: #080336;
+}
+
+/* ハンバーガーメニューのABOUTの文字の色 */
+header .text-body-secondary {
+  color: #f6f5f9 !important;
+}
+
+/* ハンバーガーメニューのボタン */
+.btn-yellow {
+  background-color: #E9DE34; /* 黄色 */
+  color: #080336; /* 濃い青 */
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: auto; /* 自動幅 */
+  white-space: nowrap; /* 一列で表示 */
+}
+
+.btn-yellow:hover {
+  background-color: #D4CE3A; /* 濃い黄色 */
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ハンバーガーメニューのボタンモバイル用スタイル */
+@media (max-width: 576px) {
+  .btn-yellow {
+      display: block; /* ボタンをブロック要素として扱う */
+      margin: 0 auto; /* 左右中央揃え */
+  }
+}
+
+
+
+/* AboutとContactの色 */
+h4 {
+  color: #fbfafa;
+}
+
+/* ロゴとカラタクの間の余白 */
+header img {
+  margin-right: 0.5rem;
+}
+
+/* トップページの色 */
+.bg-yellow {
+  background-color: #E9DE34;
+}
+
+/* TOP画像全体の余白を削除 */
+.full-width-image-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* TOP画像横幅いっぱいに画像を表示 */
+.full-width-image {
+  width: 100%;
+  /* 横幅を画面いっぱいに広げる */
+  height: auto;
+  /* アスペクト比を維持 */
+  display: block;
+  /* ブロック要素に設定 */
+  margin: 0;
+  /* 余白をなくす */
+}
+
+
+
+
+/* 「ディグる・ポチる・チェケる・まわす」と画像の間を詰める */
+.lead {
+  margin-bottom: 3rem;
+  /* 「ディグる・ポチる・チェケる・まわす」の下の余白を減らす */
+}
+
+.full-width-image-container {
+  margin-top: -3rem;
+  /* 画像の上の余白をマイナスで詰める */
+}
+
+
+
+
+
+
+/*「ディグる・ポチる・チェケる・まわす」 ボタン */
+
+/* ボタンデザイン */
+.instructions-toggle {
+  margin: 0 auto;
+  /* ボタンが常に中央 */
+  background-color: #E9DE34;
+  /* 黄色 */
+  color: #080336;
+  /* 濃い青 */
+  font-size: 1.2rem;
+  /* 少し大きめ */
+  font-weight: bold;
+  /* 太字 */
+  border: none;
+  /* ボーダーを消す */
+  padding: 0.7rem 1.5rem;
+  /* ゆとりのある余白 */
+  border-radius: 25px;
+  /* 丸みを追加 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* 影を追加 */
+  transition: all 0.3s ease;
+  /* アニメーション効果 */
+  cursor: pointer;
+  /* カーソルをポインターに */
+}
+
+.instructions-toggle:hover {
+  background-color: #D4CE3A;
+  /* ホバー時の濃い黄色 */
+  transform: scale(1.05);
+  /* 拡大効果 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  /* 影を強調 */
+}
+
+/* 吹き出しスタイル */
+.speech-bubble {
+  background-color: #ffffff; /* 白背景 */
+  border: 2px solid #E9DE34; /* 黄色い枠線 */
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  display: inline-block;
+  max-width: 300px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; /* 中央揃え */
+}
+
+/* 吹き出し内の画像スタイル */
+.instructions-image {
+  max-width: 100%; /* 吹き出し内で画像を幅いっぱいに表示 */
+  height: auto; /* アスペクト比を維持 */
+  border-radius: 8px; /* 画像の角を少し丸く */
+  display: block; /* ブロック要素として扱う */
+  margin: 0 auto; /* 中央揃え */
+}
+
+
+
+/* 非表示スタイル */
+.d-none {
+  display: none;
+}
+
+/* モバイル用のスタイル */
+@media (max-width: 576px) {
+  .instructions-toggle {
+    font-size: 1rem;
+    /* ボタンのフォントサイズを小さく調整 */
+    padding: 0.5rem 1rem;
+    /* パディングを調整 */
+    text-align: center;
+    /* テキストを中央揃え */
+    display: block;
+    /* ボタン全体をブロック要素に */
+    word-wrap: break-word;
+    /* テキストを自動で改行 */
+    white-space: normal;
+    /* 改行を許可 */
+  }
+
+  .instructions-toggle .arrow-icon {
+    margin-top: 0.5rem;
+    /* アイコンを少し下に移動 */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* footerの色 */
+footer {
+  background-color: #080336;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+
+/* カード内の画像をスクエアに保つ */
+.card-img-top {
+  object-fit: contain;
+  /* アスペクト比を維持して全体表示 */
+  height: 225px;
+  /* 固定の高さ */
+  width: 100%;
+  /* 幅はカード全体に合わせる */
+}
+
+
+
+/* 改行位置を調整 */
+.lead {
+  font-size: 1.1rem;
+  /* デフォルトのフォントサイズ */
+  line-height: 1.6;
+  /* 行間を調整 */
+  text-align: center;
+  /* 中央揃え */
+  word-break: break-word;
+  /* 長い単語の自動改行を許可 */
+}
+
+
+
+/* スマートフォン画面サイズ用 */
+@media (max-width: 576px) {
+  .lead {
+    font-size: 0.9rem;
+    /* スマホでは少し小さく */
+    line-height: 1.4;
+    /* 行間をやや詰める */
+    max-width: 330px;
+    /* 文章の幅を固定 */
+    margin: 0 auto;
+    /* 中央揃え */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    /* 見出しを小さく */
+    margin-bottom: 0.5rem;
+    /* 下の余白を小さく */
+  }
+}
+
+/* タブレット画面サイズ用 */
+@media (min-width: 577px) and (max-width: 768px) {
+  .lead {
+    font-size: 1.1rem;
+    /* 少し大きめのフォントサイズ */
+    line-height: 1.6;
+    /* 行間を調整 */
+    max-width: 400px;
+    /* 横幅を広めに設定 */
+    margin: 0 auto;
+    /* 中央揃え */
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* タブレット用の見出しサイズ */
+  }
+}
+
+
+/* エントリーボタンのカスタムデザイン（コピーと同じデザイン） */
+.entry-button {
+  background-color: #E9DE34;
+  /* ボタン背景色：黄色 */
+  color: #080336;
+  /* テキスト色：濃い青 */
+  border: none;
+  /* ボーダーを消す */
+  padding: 0.5rem 1rem;
+  /* 余白 */
+  border-radius: 5px;
+  /* ボタンの角を丸く */
+  font-weight: bold;
+  /* 太字 */
+  font-size: 1rem;
+  /* 文字サイズ */
+  transition: all 0.3s ease;
+  /* ホバー時のアニメーション効果 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* 影を追加 */
+}
+
+/* ホバー時のデザイン */
+.entry-button:hover {
+  background-color: #D4CE3A;
+  /* 濃い黄色 */
+  transform: scale(1.05);
+  /* 拡大効果 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  /* 影を強調 */
+}
+
+/* クリック時（アクティブ）のデザイン */
+.entry-button:active {
+  background-color: #C0B72F;
+  /* さらに濃い黄色 */
+  transform: scale(0.95);
+  /* 押し込むような縮む効果 */
+}
+
+
+
+
+
+
+
+
+
+
+/* 戻るボタンのデザイン */
+.back-to-top {
+  display: inline-block;
+  background-color: #080336;
+  /* ボタン背景色 */
+  color: #f6f5f9;
+  /* テキスト色 */
+  padding: 0.5rem 1rem;
+  /* 余白 */
+  font-size: 1rem;
+  /* 文字サイズ */
+  font-weight: bold;
+  /* 太字 */
+  text-decoration: none;
+  /* 下線を消す */
+  border-radius: 25px;
+  /* 丸みを追加 */
+  transition: all 0.3s ease;
+  /* アニメーション効果 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* 影を追加 */
+  text-align: center;
+  /* 中央揃え */
+}
+
+/* PC用のホバー時のデザイン */
+@media (hover: hover) and (pointer: fine) {
+  .back-to-top:hover {
+    background-color: #E9DE34;
+    /* ホバー時の背景色 */
+    color: #080336;
+    /* ホバー時の文字色 */
+    transform: scale(1.1);
+    /* 拡大効果 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* 影を強調 */
+  }
+}
+
+/* モバイル用のタップ時のデザイン */
+@media (hover: none) and (pointer: coarse) {
+  .back-to-top:active {
+    background-color: #E9DE34;
+    /* タップ時の背景色 */
+    color: #080336;
+    /* タップ時の文字色 */
+    transform: scale(0.95);
+    /* 押し込む感覚 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* 影を調整 */
+  }
+}
+
+
+
+/* モーダルコピーボタンのカスタムデザイン */
+.copy-button {
+  background-color: #E9DE34;
+  /* ボタン背景色：黄色 */
+  color: #080336;
+  /* テキスト色：濃い青 */
+  border: none;
+  /* ボーダーを消す */
+  padding: 0.5rem 1rem;
+  /* 余白 */
+  border-radius: 5px;
+  /* ボタンの角を丸く */
+  font-weight: bold;
+  /* 太字 */
+  font-size: 1rem;
+  /* 文字サイズ */
+  transition: all 0.3s ease;
+  /* ホバー時のアニメーション効果 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* 影を追加 */
+}
+
+/* ホバー時のデザイン */
+.copy-button:hover {
+  background-color: #D4CE3A;
+  /* 濃い黄色 */
+  transform: scale(1.05);
+  /* 拡大効果 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  /* 影を強調 */
+}
+
+/* クリック時（アクティブ）のデザイン */
+.copy-button:active {
+  background-color: #C0B72F;
+  /* さらに濃い黄色 */
+  transform: scale(0.95);
+  /* 押し込むような縮む効果 */
+}
